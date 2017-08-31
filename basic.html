@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<title>Random</title>
+</head>
 <body>
-	<h1 id = "heading"> Line one 1 </h1>
-<p id="demo"></p>
-<p id="new_demo"></p>
-<button onclick="this.innerHTML = Date()" 
-> the time is = </button>
-<!-- not working -->
-<script  scr ="basicJS.js">
-	//document.getElementById("new_demo").innerHTML = add(3,7); 
-</script>
 
-<script>
-	//console.log(7 + 10);
-	var x = add(5,6);
-	function add(a, b){
-		return a + b;
+<h id = "heading"> Random </h>
+<p id = "para"> get random numbers</p>
+
+<button id = "button" onclick="document.getElementById('para2').innerHTML = get_random_number(0,10)"> random numbers</button>
+<p></p>
+<p2 id = "para2">  </p2>
+<script >
+	function get_random_number(min, max){
+		return Math.floor(Math.random() * (max - min)) + min;
 	}
-	console.log(x);
 </script>
-
 </body>
 </html>
