@@ -1,18 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Dates </title>
+	<title>Arrays</title>
 </head>
 <body>
+<h> Array </h>
+<p> Looping through an array </p>
+<p id = "loop" > </p>
+<p id = "dot"> </p>
 
-<button id = "button" onclick= dis_date();> Date</button>
-<p id = "para"></p>
+<script> 
+	var i, alen, text;
+	var array1 = [
+    "tom",
+    "jerry",
+    "spike",
+    "nibbles",
+    "tyke",
+    "butch",
+    "toodles",
+    "mammy",
+    "quacker",
+    "cuckoo",
+    "topsy",
+    "meathead"
+    ]
+    alen = array1.length;
 
-<script>
-// default zero time is = 01 January 1970 00:00:00 UTC
-function dis_date(){
-	document.getElementById("para").innerHTML = Date();	
+text = "<ul>";
+alen = array1.length;
+for (i = 0; i< alen; i++){
+	text += "<li>" + array1[i] + "</li>";
 }
+text += "</ul>";
+document.getElementById('loop').innerHTML = text;
+
 </script>
 
 </body>
