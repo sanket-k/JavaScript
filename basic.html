@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Arrays</title>
+	<title> Logical operators </title>
 </head>
 <body>
-<h> Array </h>
-<p> Looping through an array </p>
-<p id = "loop" > </p>
 
-<script> 
-	var arr = [
-    "tom",
-    "jerry",
-    "spike",
-    "nibbles",
-    "tyke",
-    "butch",
-    "toodles",
-    "mammy",
-    "quacker",
-    "cuckoo",
-    "topsy",
-    "meathead"
-    ]
-    
+Age : <input type="number" id = "age" value="18">
+<button id = "button" onclick="checkAge()"> check age</button>
+<p id = "ans"></p>
+
+<script >
+	function checkAge(){
+		var age = document.getElementById("age").value;
+		var voteable = (age < 18) ? "too young":"you can vote";
+		/*
+		var voteable;
+		if (age < 18){
+			voteable = "too young";
+		}
+		else {
+			voteable = "you can vote";
+		}
+		*/
+		document.getElementById("ans").innerHTML = voteable ;
+	}
 </script>
 
 </body>
