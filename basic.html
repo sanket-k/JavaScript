@@ -7,11 +7,9 @@
 <h> Array </h>
 <p> Looping through an array </p>
 <p id = "loop" > </p>
-<p id = "dot"> </p>
 
 <script> 
-	var i, alen, text;
-	var array1 = [
+	var arr = [
     "tom",
     "jerry",
     "spike",
@@ -25,16 +23,7 @@
     "topsy",
     "meathead"
     ]
-    alen = array1.length;
-
-text = "<ul>";
-alen = array1.length;
-for (i = 0; i< alen; i++){
-	text += "<li>" + array1[i] + "</li>";
-}
-text += "</ul>";
-document.getElementById('loop').innerHTML = text;
-
+    
 </script>
 
 </body>
