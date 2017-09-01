@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Random</title>
+	<title> Dates </title>
 </head>
 <body>
 
-<h id = "heading"> Random </h>
-<p id = "para"> get random numbers</p>
+<button id = "button" onclick= dis_date();> Date</button>
+<p id = "para"></p>
 
-<button id = "button" onclick="document.getElementById('para2').innerHTML = get_random_number(0,10)"> random numbers</button>
-<p></p>
-<p2 id = "para2">  </p2>
-<script >
-	function get_random_number(min, max){
-		return Math.floor(Math.random() * (max - min)) + min;
-	}
+<script>
+// default zero time is = 01 January 1970 00:00:00 UTC
+function dis_date(){
+	document.getElementById("para").innerHTML = Date();	
+}
 </script>
+
 </body>
 </html>
