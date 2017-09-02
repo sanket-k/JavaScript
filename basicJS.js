@@ -1,14 +1,29 @@
-var time_hrs = new Date().getHours();
-alert(time_hrs);
+var day = new Date().getDay();
 
-if ( time_hrs <= 11){
-	document.getElementById("disp").innerHTML = "morning";
+switch(day){
+	case 0:
+		text = "Sunday";
+		break;
+	case 1:
+		text = "Monday";
+		break;	
+	case 2:
+		text = "Tuesday";
+		break;	
+	case 3:
+		text = "Wednesday";
+		break;	
+	case 4:
+		text = "thrusday";
+		break;	
+	case 5:
+		text = "Friday";
+		break;
+	case 6:
+		text = "Saturday";
+		break;
+	default:
+		text = "breaking";
+		break;
 }
-else if(time_hrs > 11 || time_hrs < 16){
-	document.getElementById("disp").innerHTML = "afternoon"; 
-}
-else if(time_hrs > 16 || time_hrs < 19){
-	document.getElementById("disp").innerHTML = "evening"; 
-}if(time_hrs > 19 ){
-	document.getElementById("disp").innerHTML = "night"; 
-}
+document.getElementById("disp").innerHTML = text;
