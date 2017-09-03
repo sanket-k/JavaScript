@@ -1,29 +1,13 @@
-var day = new Date().getDay();
+var arr = ["tom",
+			"jerry",
+			"spike",
+			"tyke",
+			"nibbles"];
 
-switch(day){
-	case 0:
-		text = "Sunday";
-		break;
-	case 1:
-		text = "Monday";
-		break;	
-	case 2:
-		text = "Tuesday";
-		break;	
-	case 3:
-		text = "Wednesday";
-		break;	
-	case 4:
-		text = "thrusday";
-		break;	
-	case 5:
-		text = "Friday";
-		break;
-	case 6:
-		text = "Saturday";
-		break;
-	default:
-		text = "breaking";
-		break;
+
+var text= "";
+for(i = 0; i<arr.length; i++){
+	text += arr[i] + "<br>";
 }
+
 document.getElementById("disp").innerHTML = text;
