@@ -1,13 +1,15 @@
-var arr = ["tom",
-			"jerry",
-			"spike",
-			"tyke",
-			"nibbles"];
+//for/in loop
 
+var new_obj = {height:5.22,
+				weight:65,
+				age:25,
+				speed:"fast"};
 
-var text= "";
-for(i = 0; i<arr.length; i++){
-	text += arr[i] + "<br>";
+var text = "";
+var x;
+
+for(x in new_obj){
+	text += new_obj[x] + "<br>";
 }
 
 document.getElementById("disp").innerHTML = text;
